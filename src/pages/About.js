@@ -9,26 +9,18 @@ const About = ({setOpen,sepratePage=true}) => {
     <div className='About'>
     <Container>
       <Typography variant='h2' sx={{ fontWeight: "bold" }}>
-          Construct Your Dream
+          About Us
         </Typography>
         {/* <img src={home} alt=''/> */}
-        <Typography variant='h2' sx={{ color: "red", fontWeight: "bold" }}>
-          Home
-        </Typography>
         <Typography>
-          Step Into the Home You've Always dreamed
+        At BeamTech Pvt Ltd, we’re not just builders; we’re visionaries. As South India’s first tech-enabled civil construction company, we blend cutting-edge technology with time-tested 
+construction practices. Our commitment to innovation and excellence drives us to deliver 
+high-quality, efficient, and sustainable solutions for residential, commercial, and industrial 
+projects.
         </Typography>
-        <Typography>
-          Of, Built Into The Highest Standard Of
-        </Typography>
-        <Typography>
-          Quality
-        </Typography>
-        <div
-        
-      >
-        <img  className="about-image" src={require("../assets/images/trally.png")} alt='img' />
-      </div>
+        <div>
+          <img  className="about-image" src={require("../assets/images/trally.png")} alt='img' />
+        </div>
       </Container>
     </div>
     </>

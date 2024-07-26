@@ -4,7 +4,7 @@ import "../styles/index.css";
 import Card from "../components/Package Card/Card";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 
 export default function Solutions({ setOpen, sepratePage = true }) {
   const [scrolled, setScrolled] = useState(0);
@@ -47,12 +47,10 @@ export default function Solutions({ setOpen, sepratePage = true }) {
       {
         sepratePage ? (<>
           <div
-          className="solution slide-in-left"
-        style={{ marginTop: "120px" }}
+          // className="solution slide-in-left"
+        style={{ marginTop: "100px",marginLeft:"40px" }}
       >
-        <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold">
-          Our Packages
-        </h1>
+        <Typography variant='h4' sx={{ fontWeight: 700, fontSize: "60px", letterSpacing: "-2%", lineHeight: "75.6px", color: "#222D37" }} className='service-title' >Our Services</Typography>
       </div>
       <br />
       <div className="package-container">
@@ -115,10 +113,10 @@ export default function Solutions({ setOpen, sepratePage = true }) {
         </>):
         (<>
           <div
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        className="solution slide-in-left"
+        // data-aos="fade-right"
+        // data-aos-offset="300"
+        // data-aos-easing="ease-in-sine"
+        // className="solution slide-in-left"
         style={{ marginTop: "120px" }}
       >
         <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold">

@@ -5,6 +5,9 @@
   margin-top: 40px;
   top: 10%;
 }
+
+
+
 .scroll-content {
   height: 100px;
   position: fixed;
@@ -106,11 +109,11 @@
 }
 
 .service-container {
-  width: 1440px;
-  height: 762px;
-  top: 11752px;
-  left: 20px;
-  padding: 103px 393px 103px 103px;
+  width: 100%;
+  /* height: 762px; */
+  /* top: 11752px; */
+  /* left: 20px; */
+  padding: 20px;
   gap: 0px;
   opacity: 0px;
 }
@@ -133,13 +136,15 @@
 }
 
 .service-content {
-  width: 480px;
-  height: 84px;
+  width: 100%;
+  /* height: 84px; */
   top: 34px;
   left: -12px;
-  padding: 0px 0px 28px 0px;
+  /* padding: 0px 0px 28px 0px; */
   gap: 0px;
   opacity: 0px;
+  margin: 40px;
+  padding-right: 20px;
 }
 .service-maibox {
   width: 944px;
@@ -173,7 +178,7 @@
 
 .serviceimg-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .service-rectangle {
@@ -222,38 +227,65 @@
   background-color: #2c3946; /* Optional: Darken background on hover */
 }
 
+@media screen and (max-width:760px) {
+  .serviceimg-container{
+    width: 100% !important;
+  }
+}
+
 @media screen and (max-width: 1015px) {
+  .culture-content img{
+    width:100% !important;
+  }
+  .culture-content{
+    flex-direction: column;
+  }
+  .service-image-house,.service-image-bulding{
+    width: 100% !important;
+  }
   .serviceimg-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     gap: 20px;
+    width: 80%;
   }
   .service-mainbox {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
     top: 103px;
     left: 103px;
     gap: 0px;
     opacity: 0px;
   }
   .client-logos {
-    margin: 30px;
-    display: grid;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: auto auto auto auto auto auto;
-    width: 100%;
+    width: calc(100% - 60px);
     justify-content: space-around;
     align-items: center;
   }
   .faq-container {
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 100%;
+    width: 100%;  
     /* gap: 20px; */
+  }
+  .faq-content{
+    width: 100% !important;
   }
   .faq-content p {
     text-wrap: stable;
+  }
+  .faq-question {
   }
   /* .construc-container{
     height: 100%;
@@ -271,10 +303,11 @@
   gap: 0px;
   opacity: 0px; */
   /* width: 1440px; */
-  height: 599px;
+  /* height: 599px; */
   top: -22px;
   left: -32px;
-  padding: 33px 45px 61px 45px;
+  padding: 20px;
+  width: calc(100% );
   gap: 0px;
   opacity: 0px;
 }
@@ -312,7 +345,7 @@
 }
 .process-box {
   /* width: 480px; */
-  height: 84px;
+  /* height: 84px; */
   top: 100px;
   gap: 0px;
   opacity: 0px;
@@ -389,8 +422,8 @@
   line-height: 75.6px;
   letter-spacing: -0.02em;
   text-align: left;
-  width: 168px;
-  height: 76px;
+  /* width: 168px; */
+  /* height: 76px; */
   gap: 0px;
   opacity: 0px;
   margin: 40px;
@@ -411,25 +444,31 @@
   text-align: left;
   color: #555555;
   margin-top: 20px;
+  
 }
 
 .faq-question {
-  /* width: 797px; */
+  width: 100%;
   /* height: 642px; */
-  top: 6px;
-  left: 543px;
+  /* top: 6px;
+  left: 543px; */
+  padding: 20px;
   gap: 0px;
-  opacity: 0px;
+  /* opacity: 0px; */
   background-color: #f0f0f0;
-  margin: 40px;
+  margin: 10px;
 }
 .faq-container {
+  /* width: 100%; */
+  margin: 0 20px;
+  margin: 20px;
   display: flex;
   justify-content: space-between;
   /* flex-wrap: wrap; */
 }
 .faq-question-item-header {
   height: 77px;
+  /* width: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -451,9 +490,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 15px;
-
-  /* width: 635px; */
+  /* margin: 20px; */
+  margin-bottom: 20px;padding: 20px;
+  width: 100%;
 }
 
 .package-container {
@@ -562,12 +601,21 @@
   left: 30%;
 }
 @media screen and (max-width: 1015px) {
+  .faq-header{
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+  .scroll-container {
+    height: 400vh;
+    position: relative;
+    margin-top: 40px;
+    top: 10%;
+  }
   .scroll-image {
-    height: 150px;
-    width: 70%;
+    height: 238px;
+    /* width: 70%; */
     position: fixed;
     top: 75%;
-    left: 0;
     transform: translateX(-50%);
     transition: transform 0.1s linear;
     margin-left: 40px;
@@ -648,6 +696,13 @@
 }
 
 @media screen and (max-width: 450px) {
+  .widthPro{
+    width: 1px;
+  }
+  .clipped-container{
+    width:calc(100% - 10px);
+    height: calc(100% - 50px);
+  }
   .package-container {
     display: flex;
     justify-content: space-around;
@@ -656,7 +711,7 @@
     margin-bottom: 10px;
     /* height: 200vh; */
     position: relative;
-    margin: 40px;
+    margin: 10px;
     padding: 0;
     margin-top: 0;
   }

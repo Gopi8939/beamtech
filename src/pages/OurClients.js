@@ -11,7 +11,7 @@ const OurClients = () => {
         <p>Our Clients</p>
       </div>
       <div>
-        <div className='client-logos'>
+        <div className='client-logos clientStyle'>
           <img src={require('../assets/images/icon.png')} alt='client1' />
           <img src={require('../assets/images/icon.png')} alt='client2' />
           <img src={require('../assets/images/icon.png')} alt='client3' />

@@ -6,7 +6,7 @@ const ProgressBar = ({ currentStep }) => {
             {[...Array(6)].map((_, index) => (
                 <React.Fragment key={index}>
                     {/* Left Dot */}
-                    <div className="relative flex items-center">
+                    <div className="relative flex items-center ">
                         <div
                             className={`w-1 h-1 rounded-full ${index > 0 && (index < currentStep ? 'bg-[#222d37]' : 'bg-[#222d37]')} transition-colors duration-200 ease-in-out`}
                         ></div>
@@ -24,7 +24,7 @@ const ProgressBar = ({ currentStep }) => {
                     {/* Line and Right Dot */}
                     {index < 5 && (
                         <div className="relative flex items-center">
-                            <div className="lg:w-24 md:w-16 w-10 border-t-2 border-dotted border-gray-400"></div>
+                            <div className="lg:w-24 md:w-16 w-10 border-t-2 border-dotted border-gray-400 widthPro"></div>
                             <div
                                 className={`absolute left-[-1px] w-1 h-1 rounded-full ${index + 1 < currentStep ? 'bg-[#222d37]' : 'bg-[#222d37]'} transition-colors duration-500 ease-in-out`}
                             ></div>
