@@ -5,6 +5,9 @@
   margin-top: 40px;
   top: 10%;
 }
+.main-container{
+  width: 100%;
+}
 
 
 
@@ -231,6 +234,9 @@
   .serviceimg-container{
     width: 100% !important;
   }
+  .main-container{
+    width: 150% !important;
+  }
 }
 
 @media screen and (max-width: 1015px) {
@@ -444,19 +450,17 @@
   text-align: left;
   color: #555555;
   margin-top: 20px;
-  
 }
 
 .faq-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  /* height: 642px; */
-  /* top: 6px;
-  left: 543px; */
   padding: 20px;
   gap: 0px;
-  /* opacity: 0px; */
   background-color: #f0f0f0;
-  margin: 10px;
 }
 .faq-container {
   /* width: 100%; */
@@ -491,10 +495,10 @@
   align-items: center;
   flex-wrap: wrap;
   /* margin: 20px; */
-  margin-bottom: 20px;padding: 20px;
+  margin-bottom: 20px;
+  /* padding: 20px; */
   width: 100%;
 }
-
 .package-container {
   display: flex;
   justify-content: space-around;
