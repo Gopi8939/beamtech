@@ -269,13 +269,20 @@
     opacity: 0px;
   }
   .client-logos {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: auto auto auto auto auto auto;
-    width: calc(100% - 60px);
+    display: grid ;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* padding: 20px; */
+  }
+  .client-logos img {
+    width: 123px;
+    height: 134px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
   }
   .faq-container {
     margin: 0 10px;

@@ -72,9 +72,21 @@ const Footer = ()=>{
         </div>
                 <div className="footerFooterCon" >
                     <div className="footerFooterWra" >
-                        <p className="footerFooterText" >paragraph</p>
-                        <p className="footerFooterText" >paragraph</p>
-                        <p className="footerFooterText" >paragraph</p>
+                    <a href="/About">
+                        <p className="footerFooterText" >About</p>
+                    </a>
+                    <a href="/solutions">
+                        <p className="footerFooterText" >Solutions</p>
+                    </a>
+                    <a href="/process">
+                        <p className="footerFooterText" >Process</p>
+                    </a>
+                    <a href="/work">
+                        <p className="footerFooterText" >Work</p>
+                    </a>
+                    <a href="/contact">
+                        <p className="footerFooterText" >Contact</p>
+                    </a>
                     </div>
                 </div>
         </div>

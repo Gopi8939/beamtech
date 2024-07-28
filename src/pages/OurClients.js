@@ -32,9 +32,10 @@ const OurClients = () => {
       <div className='cta-header'>
       <p>CTA Section</p>
       </div>
-      <p className='cta-content'>Lorem ipsum dolor sit amet consectetur. A convallis non praesent ultricies vivamus eget urna aliquam.</p>
+      <p className='cta-content'> Ready to start your next construction project with BeamTech? Contact us 
+      today for a free consultation and quote. Our team is eager to bring your vision to life</p>
       <div className="flex justify-center py-6 relative z-10">
-                    <Button variant='contained' className="cta-btn" sx={{borderRadius:"25px",backgroundColor:"#222D37"}} endIcon={<ArrowForward/>}>Contact Us</Button>
+                    <Button variant='contained' className="cta-btn" sx={{borderRadius:"25px",backgroundColor:"#222D37"}} endIcon={<ArrowForward/>}>Get a Free Quote</Button>
                 </div>
       </div>
     </div>

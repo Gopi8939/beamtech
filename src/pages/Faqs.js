@@ -53,17 +53,18 @@ const Faqs = () => {
       <div className='faq-question'>
             {questions.map((question,index)=>{
                 return(
+                    <>
                     <div key={question.id} className='faq-question-item' onClick={()=>showAnswer(index)}>
                         <div className='faq-question-item-header'>
                             <p>{question.q}</p>
                             {/* <button onClick={()=>{question.view=!question.view}}>{question.view?'-':'+'}</button> */}
                         </div>
-                        {question.view && <div className='faq-question-item-content'>
+                        {question.view && <div className='faq-question-item-content' style={{width:"600px"}}>
                             <p>{question.ans}</p>
                         </div>}
-                        <Divider sx={{backgroundColor:"#000000"}}/>
-                        <Divider sx={{backgroundColor:"#000000"}}/>
                     </div>
+                    <div style={{width:"100%",height:"2px",background:"black"}}/>
+                    </>
                 )
             })}
       </div>
