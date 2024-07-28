@@ -200,7 +200,7 @@ body {
   padding: 20;
 }
 .client-logos {
-  display: flex;
+  display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
   width: 100%;
   justify-content: space-around;

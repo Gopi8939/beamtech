@@ -237,6 +237,9 @@
   .main-container{
     width: 150% !important;
   }
+  .client-logos {
+    grid-template-columns: auto auto;
+  }
 }
 
 @media screen and (max-width: 1015px) {
@@ -269,21 +272,22 @@
     opacity: 0px;
   }
   .client-logos {
-    display: grid ;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    width: 100%;
-    justify-content: space-around;
+    grid-gap: 20px;
     align-items: center;
+    display: grid;
     flex-wrap: wrap;
     gap: 20px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: space-around;
+    width: 100%;
     /* padding: 20px; */
   }
-  .client-logos img {
+  /* .client-logos img {
     width: 123px;
     height: 134px;
     object-fit: contain;
     transition: transform 0.3s ease;
-  }
+  } */
   .faq-container {
     margin: 0 10px;
     display: flex;
