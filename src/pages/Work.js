@@ -19,8 +19,8 @@ export default function Work({setOpen,sepratePage=true}) {
         <>
             {sepratePage && <Navbar setOpen={setOpen} />}
             {/* className="page mt-20" */}
-            <div className="page mt-20 bg-cover bg-center min-h-screen"
-                style={{ backgroundImage: `url(${bgImage})` }}
+            <div className="project page mt-20 bg-cover bg-center min-h-screen "
+                style={{ backgroundImage: `url(${bgImage})`,width:"100%"}}
             >
                 {/* className="pt-14 px-14 text-black" */}
                 <div className="pt-14 px-5 md:px-14 text-black">

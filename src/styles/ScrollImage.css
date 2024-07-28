@@ -241,10 +241,27 @@
     grid-template-columns: auto auto !important;
   }
 }
+@media screen and (max-width:668px) {
+  .project{
+    width: 120% !important;
+  }
+  .cta-container{
+    width: 120% !important;
+  }
+}
 
 @media screen and (max-width: 1015px) {
+  .main-container{
+    width: 150% !important;
+  }
   .culture-content img{
     width:100% !important;
+  }
+  .project{
+    width: 120% !important;
+  }
+  .cta-container{
+    width: 120% !important;
   }
   .culture-content{
     flex-direction: column;
