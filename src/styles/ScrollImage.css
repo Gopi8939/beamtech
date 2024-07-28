@@ -238,7 +238,7 @@
     width: 150% !important;
   }
   .client-logos {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto !important;
   }
 }
 
